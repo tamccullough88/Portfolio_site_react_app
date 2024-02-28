@@ -7,7 +7,7 @@ import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineMenu } from "react-icons/ai";
-export default (() => {
+function Projects() {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"projects"} />
 		<Helmet>
@@ -613,4 +613,6 @@ export default (() => {
 			<script src={"https://kit.fontawesome.com/e9ddb13395.js"} crossorigin={"anonymous"} place={"endOfHead"} rawKey={"65de0b103964c473fe42fcf5"} />
 		</RawHtml>
 	</Theme>;
-});
+};
+
+export default Projects;

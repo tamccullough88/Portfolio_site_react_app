@@ -1,4 +1,4 @@
-export default {
+const index = {
 	"defaultWidth": 1280,
 	"breakpoints": {
 		"sm": [
@@ -184,3 +184,5 @@ export default {
 	},
 	"version": 19
 }
+
+export default index
