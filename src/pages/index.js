@@ -434,6 +434,8 @@ export default (() => {
 						md-padding="0px 0px 0px 0px"
 						sm-height="25vh"
 						sm-width="50vw"
+						type="link"
+						href="https://drive.google.com/file/d/1C9uBn8Fu3hwlKKCGOoHsAqN9pZQB0P0J/view?usp=sharing"
 					>
 						Resume
 					</Button>

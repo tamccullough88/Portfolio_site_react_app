@@ -307,11 +307,11 @@ export default (() => {
 							If you would like to know more, collaborate, or just say "Hey!", feel free to shoot me an email!{" "}
 						</Text>
 						<Link
-							href="mailto:blank?tamccullough88@gmail.com"
+							href="mailto:tamccullough88@gmail.com"
 							text-align="center"
 							color="--light"
 							font="1em --fontFamily-googleFredoka"
-							text-decoration-line="initial"
+							text-decoration-line="underline"
 							margin="0px 0px 16px 0px"
 							xs-font="1em --fontFamily-googleFredoka"
 						>

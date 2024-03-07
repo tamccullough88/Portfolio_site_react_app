@@ -310,7 +310,17 @@ export default (() => {
 							My name is Thomas McCullough. I am a junior software developer who has recently graduated from a 10 month long boot camp that taught me JavaScript, React.JS, Express.JS, MongoBD, SQL, Python, Styling with CSS and SCSS, and, of course, the all mighty HTML! But that's not why you came to this page. You want to learn who I am!
 							<br />
 							<br />
-							<Strong>
+							<br />
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
 								Employment:
 							</Strong>
 							<br />
@@ -318,22 +328,48 @@ export default (() => {
 							<br />
 							<br />
 							<br />
-							<br />
-							<Strong>
+							<Strong
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
 								More About Me:
 							</Strong>
 							<br />
-							In my free time, I like to 
-play with my little boy,
+							In my free time, I like to date my amazing wife, play with my little boy,
 
 smoke meats, go fishing, go off-roading/camping,  learn more coding techniques, play bass in my church band, take care of my veggie and native plant garden, and various other things.{" "}
+							<br />
+							<br />
+							<br />
+							<Strong>
+								Next Projects:
+							</Strong>
+							<br />
+							Some projects I am looking to start are:
+							<br />
+							- Simple C++ projects with Arduino
+							<br />
+							- Christmas Light Controller
+							<br />
+							- Text to Morse Code and back for ham radio
+							<br />
+							- Theremin
+							<br />
+							- Temperature controller for my smoker{" "}
+							<br />
 						</Text>
 						<Link
-							href="mailto:blank?tamccullough88@gmail.com"
+							href="mailto:tamccullough88@gmail.com"
 							text-align="center"
 							color="--light"
 							font="1em --fontFamily-googleFredoka"
-							text-decoration-line="initial"
+							text-decoration-line="underline"
 							margin="0px 0px 16px 0px"
 							xs-font="1em --fontFamily-googleFredoka"
 						>
