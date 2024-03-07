@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, LinkBox, Box, Section, Image, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, LinkBox, Box, Section, Image, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
@@ -8,7 +8,7 @@ import * as Components from "components";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
-function Index() {
+export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
@@ -30,9 +30,8 @@ function Index() {
 			width="100vw"
 			min-height="100vh"
 			min-width="100vw"
-			display="block"
-			justify-content="center"
-			position="absolute"
+			justify-content="flex-start"
+			position="static"
 			flex-direction="column"
 			align-items="center"
 			align-content="center"
@@ -40,6 +39,7 @@ function Index() {
 			overflow-y="hidden"
 			bottom="0px"
 			top="0px"
+			display="block"
 		>
 			<Section
 				sm-padding="8px 0 8px 0"
@@ -317,8 +317,8 @@ function Index() {
 				md-margin="0px 0px 0px 0px"
 				lg-max-height="75vh"
 				sm-margin="0px 0px 0px 0px"
-				height="100vh"
-				align-self="center"
+				height="fit-content"
+				align-self="stretch"
 				flex="0 1 auto"
 				order="0"
 				width="100vw"
@@ -471,6 +471,28 @@ function Index() {
 				</Box>
 			</Box>
 		</Box>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"65d793ba1d712a00233098ea"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
@@ -479,6 +501,4 @@ function Index() {
 			<script src={"https://kit.fontawesome.com/e9ddb13395.js"} crossorigin={"anonymous"} place={"endOfHead"} rawKey={"65de0b103964c473fe42fcf5"} />
 		</RawHtml>
 	</Theme>;
-};
-
-export default Index;
+});

@@ -7,7 +7,7 @@ import { RawHtml, Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineMenu } from "react-icons/ai";
-function Contact() {
+export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"contact"} />
 		<Helmet>
@@ -348,6 +348,28 @@ function Contact() {
 				</Section>
 			</Box>
 		</Box>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"65d793ba1d712a00233098ea"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
@@ -356,6 +378,4 @@ function Contact() {
 			<script src={"https://kit.fontawesome.com/e9ddb13395.js"} crossorigin={"anonymous"} place={"endOfHead"} rawKey={"65de0b103964c473fe42fcf5"} />
 		</RawHtml>
 	</Theme>;
-};
-
-export default Contact
+});

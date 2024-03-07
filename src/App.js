@@ -15,20 +15,16 @@ const GlobalStyles = createGlobalStyle`
     }
 `;
 
-function App() {
-    return (
-        <Router>
-            <GlobalStyles />
-            <Switch>
-                <Route exact path='/' component={Index} />
-                <Route exact path='/index' component={Index} />
-                <Route exact path='/projects' component={Projects} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/contact' component={Contact} />
-                <Route component={Page404} />
-            </Switch>
-        </Router>
-    )
-};
-
-export default App;
+export default () => (
+    <Router>
+        <GlobalStyles />
+        <Switch>
+        			<Route exact path='/' component={Index}/>
+			<Route exact path='/index' component={Index}/>
+			<Route exact path='/projects' component={Projects}/>
+			<Route exact path='/about' component={About}/>
+			<Route exact path='/contact' component={Contact}/>
+			<Route component={Page404}/>
+        </Switch>
+    </Router>
+);

@@ -1,4 +1,4 @@
-const qapi = {
+export default {
 	"pages": {
 		"root": {
 			"id": "root",
@@ -63,5 +63,3 @@ const qapi = {
 		}
 	}
 }
-
-export default qapi

@@ -7,7 +7,7 @@ import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineMenu } from "react-icons/ai";
-function Projects() {
+export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"projects"} />
 		<Helmet>
@@ -452,6 +452,7 @@ function Projects() {
 					md-padding="1vh 0px 1vh 0px"
 					xs-width="250px"
 					xs-height="fit-content"
+					quarkly-title="React-a-Mole"
 				>
 					<Override
 						slot="Content"
@@ -498,29 +499,33 @@ function Projects() {
 								md-margin="1vh 1 1vh 1px"
 								md-padding="1vh 1vh 1vh 1v0h"
 							>
-								A web app that lets you add a restaurant and comment on how good they are or rant about how bad they are. Built with Express.js, React.js, and Node.js
+								Utilizing
+ternary operators to create a game of Whack-A-Mole within two of three
+components and state variables. Implementing
+math.random as a timer for when a mole shows on screen and disappears to avoid
+being “Whacked”.{" "}
 							</Text>
 						</Override>
 						<Override slot="cell-1">
 							<Link
-								href="https://rest-rant-phqf.onrender.com"
+								href="https://github.com/tamccullough88/react-a-mole"
 								color="#ffffff"
 								font="25px --fontFamily-googleFredoka"
 								hover-color="#008cff"
 								md-margin="1vh 1 1vh 1px"
 								md-padding="1vh 1vh 1vh 1v0h"
 							>
-								Rest Rant (Yelp Clone)
+								React-A-Mole
 							</Link>
 						</Override>
 						<Override slot="cell-2">
 							<Image
-								src="https://uploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20:36:20.879Z"
+								src="https://uploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23:28:35.446Z"
 								display="block"
 								max-height="325px"
 								max-width="325px"
 								xs-width="225px"
-								srcSet="https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=3200 3200w"
+								srcSet="https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/Capture.JPG?v=2024-03-06T23%3A28%3A35.446Z&quality=85&w=3200 3200w"
 								sizes="(max-width: 414px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 414px) 100vw,(max-width: 300px) 100vw,100vw"
 							/>
 						</Override>
@@ -582,22 +587,24 @@ function Projects() {
 						/>
 						<Override slot="cell-0">
 							<Text margin="0px 0px 0px 0px" color="#ffffff" font="15px --fontFamily-googleFredoka" lg-width="inherit">
-								A web app that lets you add a restaurant and comment on how good they are or rant about how bad they are. Built with Express.js, React.js, and Node.js
+								Generic password generator built using vanilla Javascript. Utilizing Math.Random(), the password generator will make a password with random letters, numbers, and characters based on user input.{" "}
 							</Text>
 						</Override>
 						<Override slot="cell-1">
-							<Link href="https://rest-rant-phqf.onrender.com" color="#ffffff" font="25px --fontFamily-googleFredoka" hover-color="#008cff">
-								Rest Rant (Yelp Clone)
+							<Link href="https://tamccullough88.github.io/Password-Generator/" color="#ffffff" font="25px --fontFamily-googleFredoka" hover-color="#008cff">
+								Password Generator{" "}
 							</Link>
 						</Override>
 						<Override slot="cell-2">
 							<Image
-								src="https://uploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20:36:20.879Z"
+								src="https://uploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23:31:36.633Z"
 								display="block"
-								max-height="325px"
+								max-height="180px"
 								max-width="325px"
 								xs-width="225px"
-								srcSet="https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/restrant.png?v=2024-02-27T20%3A36%3A20.879Z&quality=85&w=3200 3200w"
+								width="300px"
+								align-self="center"
+								srcSet="https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/65d793ba1d712a00233098ec/images/JS%20Password.JPG?v=2024-03-06T23%3A31%3A36.633Z&quality=85&w=3200 3200w"
 								sizes="(max-width: 414px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 414px) 100vw,(max-width: 300px) 100vw,100vw"
 							/>
 						</Override>
@@ -605,6 +612,28 @@ function Projects() {
 				</Structure>
 			</Box>
 		</Box>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"65d793ba1d712a00233098ea"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
@@ -613,6 +642,4 @@ function Projects() {
 			<script src={"https://kit.fontawesome.com/e9ddb13395.js"} crossorigin={"anonymous"} place={"endOfHead"} rawKey={"65de0b103964c473fe42fcf5"} />
 		</RawHtml>
 	</Theme>;
-};
-
-export default Projects;
+});

@@ -1,15 +1,13 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, LinkBox, Box, Section } from "@quarkly/widgets";
+import { Theme, Link, Text, LinkBox, Box, Section, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override } from "@quarkly/components";
+import { RawHtml, Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineMenu } from "react-icons/ai";
-
-
-function About() {
+export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"about"} />
 		<Helmet>
@@ -36,6 +34,7 @@ function About() {
 			justify-content="center"
 			md-justify-content="center"
 			md-align-content="center"
+			xs-display="flex"
 		>
 			<Section
 				sm-padding="8px 0 8px 0"
@@ -243,7 +242,7 @@ function About() {
 			<Box
 				display="flex"
 				lg-margin="10vh 0px 0px 0px"
-				md-display="block"
+				md-display="flex"
 				md-flex-direction="column"
 				md-align-items="center"
 				sm-justify-content="center"
@@ -267,8 +266,132 @@ function About() {
 				md-flex="0 1 auto"
 				md-margin="0px 0 0px 0px"
 				md-padding="15px 20vw 0px 20vw"
-			/>
+				xs-display="flex"
+			>
+				<Section
+					background="rgba(41, 126, 196, 0.66)"
+					padding="80px 0 80px 0"
+					xs-height="fit-content"
+					xs-width="fit-content"
+					xs-align-items="center"
+					xs-padding="80px 10px 80px 10px"
+					md-width="fit-content"
+					md-padding="80px 10px 80px 10px"
+				>
+					<Override slot="SectionContent" xs-height="inherit" />
+					<Box
+						display="flex"
+						align-items="center"
+						flex-direction="column"
+						justify-content="center"
+						padding="0px 200px 0px 200px"
+						lg-padding="0px 0px 0px 0px"
+					>
+						<Text
+							margin="0px 0px 30px 0px"
+							font="4em --fontFamily-googleFredoka"
+							color="--light"
+							text-align="center"
+							sm-font="normal 700 62px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
+							xs-font="4em --fontFamily-googleFredoka"
+						>
+							About Me
+						</Text>
+						<Text
+							margin="0px 0px 48px 0px"
+							font="1.em --fontFamily-googleFredoka"
+							color="--light"
+							text-align="center"
+							xs-font="1em --fontFamily-googleFredoka"
+						>
+							Hey!
+							<br />
+							<br />
+							My name is Thomas McCullough. I am a junior software developer who has recently graduated from a 10 month long boot camp that taught me JavaScript, React.JS, Express.JS, MongoBD, SQL, Python, Styling with CSS and SCSS, and, of course, the all mighty HTML! But that's not why you came to this page. You want to learn who I am!
+							<br />
+							<br />
+							<Strong>
+								Employment:
+							</Strong>
+							<br />
+							I am currently a employed as a Paid Search Analyst. I have outgrown my current position at my place of employment and am looking to make a change that will grow with me. I remembered that I found joy in coding by helping clients make better shopping feeds for Google with PHP. Wanting to learn more, I decided to take classes on software development. I would like to make this my career ad am actively working towards that.{" "}
+							<br />
+							<br />
+							<br />
+							<br />
+							<Strong>
+								More About Me:
+							</Strong>
+							<br />
+							In my free time, I like to 
+play with my little boy,
+
+smoke meats, go fishing, go off-roading/camping,  learn more coding techniques, play bass in my church band, take care of my veggie and native plant garden, and various other things.{" "}
+						</Text>
+						<Link
+							href="mailto:blank?tamccullough88@gmail.com"
+							text-align="center"
+							color="--light"
+							font="1em --fontFamily-googleFredoka"
+							text-decoration-line="initial"
+							margin="0px 0px 16px 0px"
+							xs-font="1em --fontFamily-googleFredoka"
+						>
+							TAMcCullough88@gmail.com
+						</Link>
+						<SocialMedia margin="0px 0px 0px 0px" linked-in="https://www.linkedin.com/in/thomas-andrew-mccullough/" github="https://github.com/tamccullough88">
+							<Override
+								slot="link"
+								border-radius="50%"
+								color="--grey"
+								hover-color="--light"
+								background="#191E22"
+								hover-background="--color-primary"
+								margin="0 5px 0 5px"
+								padding="5x 5px 5px 5px"
+								width="48px"
+								height="48px"
+								align-items="center"
+								display="flex"
+								justify-content="center"
+								hover-transition="background-color 0.2s ease-in-out 0s"
+								transition="background-color 0.2s ease-in-out 0s"
+							/>
+							<Override
+								slot="icon"
+								color="--light"
+								padding="7px 7px 7px 7px"
+								border-width="0px"
+								size="38px"
+								border-radius="50px"
+							/>
+						</SocialMedia>
+					</Box>
+				</Section>
+			</Box>
 		</Box>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"65d793ba1d712a00233098ea"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
@@ -277,6 +400,4 @@ function About() {
 			<script src={"https://kit.fontawesome.com/e9ddb13395.js"} crossorigin={"anonymous"} place={"endOfHead"} rawKey={"65de0b103964c473fe42fcf5"} />
 		</RawHtml>
 	</Theme>;
-};
-
-export default About 
+});
